@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "remix setup node",
-    "dev": "remix dev"
+    "dev": "remix dev",
+    "build": "remix build"
   },
   "author": "",
   "license": "ISC",
