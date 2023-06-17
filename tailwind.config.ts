@@ -16,6 +16,7 @@ export default {
       'primary':"#333333",
       'secondary': '#ffffff',
       'tertiary':"#ffa500",
+      'tertiary-alternate':"#25D366",
       'secondary-alternate':"#f1f1f1"
     },
   },
