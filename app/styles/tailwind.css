@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+a{
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#menu:checked~.mobile-menu {
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#menu:checked~.mobile-menu>li {
+    padding: 10px;
+    font-size: 14px;
+    height: auto;
+}
+
+#menu:checked~.mobile-menu>li::after{
+    border-bottom: 1px solid white;
+}
+
+.hamburger>span {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+
+
+.menu:checked + div .hamburger span:first-child {
+    transform: rotate(45deg) translateX(12.5px);
+}
+
+.menu:checked + div .hamburger span:last-child {
+    transform: rotate(-45deg) translateX(12.5px);
+}
+
+.menu:checked + div .hamburger span:nth-child(2) {
+    transform: translateX(100px);
+
+}
